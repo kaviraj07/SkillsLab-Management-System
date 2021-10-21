@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaviraj Gosaye">
+    <meta name="application-name" content="A management system">
+    <meta name="description" content="This is a website for managing skillsLab learners courses and assignments">
+    <meta name="title" content="Skills Lab Learner">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Skills Lab Learner's System</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="header-wrapper">
+            <h1>Skills Lab Management System</h1>
+        </div>
+    </nav>
+
+    <form class="form-container">
+        <div class="container-wrapper">
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="pname">Programme Name</label>
+                </div>
+                <div class="input-elem">
+                    <input type="text" id="pname" name="progname" placeholder="Enter Programme Name">
+                </div>
+            </div>
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="coursename">Assign Course</label>
+                </div>
+                <div class="input-elem">
+                    <select id="courses" name="courses">
+                            <option value="select-unknown">--- Select Course ---</option>
+                           
+                        </select>
+                </div>
+            </div>
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="trainer">Assign Trainer</label>
+                </div>
+                <div class="input-elem">
+                    <select id="trainer" name="trainer">
+                            <option value="select-unknown" selected>--- Select Trainer ---</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="assignment">Allocate Assignment</label>
+                </div>
+                <div class="input-elem">
+                    <select id="assignment" name="assignment">
+                            <option value="select-unknown" selected>--- Select Assigment ---</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="start date">Start Date</label>
+                </div>
+                <div class="input-elem">
+                    <input type="date" id="sdate" name="start date">
+
+                </div>
+            </div>
+            <div class="row-input">
+                <div class="text-display">
+                    <label for="end date">End Date</label>
+                </div>
+                <div class="input-elem">
+                    <input type="date" id="edate" name="end date">
+
+                </div>
+            </div>
+
+            <div class="row-submit">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+
+
+    <script src="./JS/data.js"></script>
+    <footer>
+        <p>P.S: To view created programmes, go to console of inspect element</p>
+    </footer>
+</body>
+
+</html>

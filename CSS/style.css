@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  --primary: #aed6dc;
+  --secondary: #ff9a8d;
+  --minor: #4a536b;
+  --button: #ced7d8;
+  background-color: var(--minor); }
+
+nav h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  color: white; }
+
+.container-wrapper {
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 5px;
+  background-color: var(--primary);
+  margin: 10px;
+  padding: 20px;
+  display: grid;
+  row-gap: 20px;
+  height: 75vh; }
+  .container-wrapper .row-input {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+  .container-wrapper .row-submit {
+    display: flex;
+    justify-content: center; }
+    .container-wrapper .row-submit input {
+      width: 15%; }
+  .container-wrapper .text-display {
+    display: inline-flex;
+    align-items: center; }
+  .container-wrapper label {
+    display: inline-block; }
+  .container-wrapper input[type=text],
+  .container-wrapper select {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid var(--minor);
+    border-radius: 4px;
+    resize: vertical;
+    font-family: 'Titillium Web', sans-serif; }
+  .container-wrapper input[type=submit] {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: white;
+    padding: 12px 20px;
+    border: solid black 2px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-size: 18px; }
+  .container-wrapper input[type=submit]:hover {
+    background-color: var(--button);
+    color: black;
+    border-color: var(--secondary); }
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white; }
