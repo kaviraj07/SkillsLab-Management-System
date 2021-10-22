@@ -55,17 +55,19 @@ for (var assignment in assignments) {
 /////////////////////////////////////////
 var programmes = {};
 var count = Object.keys(programmes).length + 1;
-var assignEquipmentForm = document.querySelector(".form-container");
+var createprogramform = document.querySelector(".form-container");
 var progname = document.querySelector("#pname");
 var dateStart = document.querySelector("#sdate");
 var dateEnd = document.querySelector("#edate");
-assignEquipmentForm.addEventListener("submit", function (e) {
+createprogramform.addEventListener("submit", function(e) {
     e.preventDefault();
     var programmename = progname.value;
     var coursename = coursesDropdown.value;
     var trainername = trainerDropdown.options[trainerDropdown.selectedIndex].text;
     var assignment = assignmentDropdown.options[assignmentDropdown.selectedIndex].text;
-    programmes[count] = [[programmename, coursename, trainername, assignment, dateStart.value, dateEnd.value]];
+    programmes[count] = [
+        [programmename, coursename, trainername, assignment, dateStart.value, dateEnd.value]
+    ];
     count = count + 1;
     console.log(programmes);
 });
