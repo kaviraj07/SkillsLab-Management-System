@@ -93,12 +93,12 @@ for (const assignment in assignments) {
 let programmes = {};
 
 let count: number = Object.keys(programmes).length + 1;
-const assignEquipmentForm = document.querySelector(".form-container");
+const createprogramform = document.querySelector(".form-container");
 const progname = document.querySelector("#pname") as HTMLInputElement;
 const dateStart = document.querySelector("#sdate") as HTMLSelectElement;
 const dateEnd = document.querySelector("#edate") as HTMLSelectElement;
 
-assignEquipmentForm.addEventListener("submit", (e) => {
+createprogramform.addEventListener("submit", (e) => {
     e.preventDefault();
     const programmename = progname.value;
     const coursename = coursesDropdown.value;
